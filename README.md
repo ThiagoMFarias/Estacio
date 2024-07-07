@@ -1,2 +1,2 @@
 # Estácio
- Prejeto escola
+ Projeto Escola
