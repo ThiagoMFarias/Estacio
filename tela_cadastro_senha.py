@@ -71,7 +71,7 @@ class NewPassword:
                 port='5432'
             )
             cur = conn.cursor()
-            cur.execute("UPDATE cadastro_usuario SET senha = %s WHERE email = %s", (nova_senha_hashed, email_usuario))
+            cur.execute("UPDATE usuario SET senha = %s WHERE email = %s", (nova_senha_hashed, email_usuario))
             conn.commit()
             cur.close()
             conn.close()
